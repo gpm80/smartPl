@@ -53,4 +53,6 @@
     <color name="recipe_favorite_on">#1eb300</color>
     <color name="recipe_tab_text_unselected">#999898</color>
     <color name="recipe_tab_text_selected">#e4e4e4</color>
+
+    <color name="white">#ffffff</color>
 </resources>
