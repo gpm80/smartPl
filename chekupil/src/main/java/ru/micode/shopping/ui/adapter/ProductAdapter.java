@@ -50,12 +50,12 @@ public class ProductAdapter extends MyRecyclerAdapter<Product> {
         private ProgressBar loadingBar;
 
         public ProductHolder(Context context, ViewGroup group, ActionListener<Product> actionListener) {
-            super(context, R.layout.recipe_adapter, group, actionListener);
-            title = itemView.findViewById(R.id.product_view_title);
+            super(context, R.layout.product_adapter, group, actionListener);
+            title = itemView.findViewById(R.id.product_title);
             //favoriteImage = itemView.findViewById(R.id.product_favorite); //in productAdapter
-            description = itemView.findViewById(R.id.product_view_description);
-            image = itemView.findViewById(R.id.product_view_image);
-            loadingBar = itemView.findViewById(R.id.product_view_loading);
+            description = itemView.findViewById(R.id.product_description);
+            image = itemView.findViewById(R.id.product_image);
+            loadingBar = itemView.findViewById(R.id.product_loading);
         }
 
         @Override
@@ -63,7 +63,7 @@ public class ProductAdapter extends MyRecyclerAdapter<Product> {
             title.setText(value.getTitle());
             description.setText(StringUtils.abbreviate(value.getDescription(), 150));
             boolean b = actionListener.itemAction(Action.BIND, position, null, value);
-            if (value.getSrcImage() != null) {
+            if (StringUtils.isNotBlank(value.getSrcImage())) {
                 loadingBar.setVisibility(View.VISIBLE);
                 String srcImage = value.getSrcImage();
                 // Загрузить картинку

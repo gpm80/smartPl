@@ -21,8 +21,8 @@ android {
         debug {
             buildConfigField "boolean", "TEST", "true"
             buildConfigField "boolean", "TEST_NOTIF", "false"
-            buildConfigField "String", "API_ENDPOINT", "\"http://192.168.0.106/rest/\""
-            buildConfigField "String", "PLANET_ENDPOINT", "\"http://192.168.0.106/rest/\""
+            buildConfigField "String", "API_ENDPOINT", "\"http://93.171.217.252/shopping-server/rest/\""
+            buildConfigField "String", "PLANET_ENDPOINT", "\"http://192.168.0.106:8085/\""
             applicationIdSuffix ".test"
             versionNameSuffix "-debug"
         }

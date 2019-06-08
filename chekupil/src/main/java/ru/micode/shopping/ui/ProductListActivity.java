@@ -1,28 +1,21 @@
 package ru.micode.shopping.ui;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.TabHost;
-import android.widget.TextView;
+import android.widget.Toast;
 import org.apache.commons.lang3.StringUtils;
 import retrofit2.Call;
 import ru.micode.shopping.R;
-import ru.micode.shopping.model.ex.ExRecipe;
 import ru.micode.shopping.rest.ApiFactory;
 import ru.micode.shopping.rest.ApiHandler;
 import ru.micode.shopping.rest.RecipeService;
-import ru.micode.shopping.service.FavoriteService;
 import ru.micode.shopping.ui.adapter.ProductAdapter;
-import ru.micode.shopping.ui.adapter.RecipeAdapter;
 import ru.micode.shopping.ui.adapter.recycler.ItemTouchListener;
 import ru.micode.shopping.ui.adapter.recycler.TuningRecycler;
 import ru.micode.shopping.ui.common.MyAbstractActivity;
@@ -40,7 +33,7 @@ public class ProductListActivity extends MyAbstractActivity {
 
     @Override
     protected Fragment createFragment() {
-        return new RecipeListTabFragment();
+        return new ProductListFragment();
     }
 
     @Override
@@ -56,15 +49,12 @@ public class ProductListActivity extends MyAbstractActivity {
     /**
      * Фрагмент рецептов
      */
-    public static class RecipeListTabFragment extends MyAbstractFragment {
+    public static class ProductListFragment extends MyAbstractFragment {
 
         private static final String LOG_TAG = RecipeService.class.getSimpleName();
-        private static final String TAB_ALL = "tabAll";
-        private static final String TAB_FAVORITE = "tabFavorite";
 
         private ProductAdapter productAdapter;
         private RecyclerView recyclerView;
-        private AtomicBoolean lookHistory = new AtomicBoolean();
 
         @Override
         public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -76,10 +66,11 @@ public class ProductListActivity extends MyAbstractActivity {
                     switch (type) {
                         case CLICK:
                             if (value != null) {
+                                Toast.makeText(getContext(), "Не реализовано!", Toast.LENGTH_SHORT).show();
                                 // TODO Product Activity
-                                Intent intent = new Intent(getContext(), RecipeViewActivity.class);
-                                intent.putExtra(RecipeViewActivity.RecipeViewFragment.INTENT_KEY_RECIPE_UID, value.getUid());
-                                startActivity(intent);
+//                                Intent intent = new Intent(getContext(), RecipeViewActivity.class);
+//                                intent.putExtra(RecipeViewActivity.RecipeViewFragment.INTENT_KEY_RECIPE_UID, value.getUid());
+//                                startActivity(intent);
                                 return true;
                             }
                             break;
@@ -107,7 +98,7 @@ public class ProductListActivity extends MyAbstractActivity {
 
         @Override
         protected void initFragment(View view) {
-            getActivity().setTitle(R.string.recipe_list_caption);
+            getActivity().setTitle(R.string.product_list_caption);
             recyclerView = TuningRecycler
                     .builder(view.findViewById(R.id.product_recycler_view), getContext())
                     .setAdapter(productAdapter)

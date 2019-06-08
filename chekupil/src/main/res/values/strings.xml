@@ -24,6 +24,9 @@
     <string name="navigator_group_description">Сортировка и изменение справочника групп товаров, используемых для
         составления списков
     </string>
+    <string name="navigator_product">Продукты</string>
+    <string name="navigator_product_description">Фермерские продукты с доставкой</string>
+
     <string name="navigator_recipe">Рецепты</string>
     <string name="navigator_recipe_description">Рецепты приготовления блюд</string>
     <string name="navigator_setting">Настройки</string>
