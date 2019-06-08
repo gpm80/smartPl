@@ -259,9 +259,18 @@
     <string name="recipe_view_shoplist_ready_button">Открыть списки покупок</string>
     <string name="recipe_view_shoplist_ready_message">Ингредиенты добавлены в ваш список покупок</string>
     <string name="recipe_view_shoplist_error_message">Что-то пошло не так, повторите попытку</string>
-    <string name="recipe_error_get_one">Временные трудности с загрузкой рецепта, пожалуйста повторите попытку позже.</string>
+    <string name="recipe_error_get_one">Временные трудности с загрузкой рецепта, пожалуйста повторите попытку позже.
+    </string>
     <string name="recipe_error_load_list">Сервер временно не доступен, пожалуйста повторите попытку позже</string>
     <string name="recipe_error_load_favorite">Сервер временно не доступен, пожалуйста повторите попытку позже</string>
+
+    <string name="product_list_caption">Продукты</string>
+    <string name="product_view_image_description">qwer</string>
+    <string name="product_view_category">qwer</string>
+    <string name="product_view_status">qwer</string>
+    <string name="product_view_manufacture">qwer</string>
+    <string name="product_view_description_caption">qwer</string>
+    <string name="product_list_wait_get_start">Загружаем доступные продукты</string>
 
     <string-array name="entries">
         <item>часто</item>
