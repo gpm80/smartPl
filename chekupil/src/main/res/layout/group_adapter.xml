@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@drawable/selector"
+              android:id="@+id/group_item_layout"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent">
+
+    <ImageButton
+            android:id="@+id/group_down_position_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            app:srcCompat="@drawable/ic_arrow_down"/>
+
+    <LinearLayout
+            style="@style/CommonItemAdapter"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/font_size_common"
+                android:width="1dp"/>
+    </LinearLayout>
+
+    <ImageButton
+            android:id="@+id/group_up_position_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            app:srcCompat="@drawable/ic_arrow_up"/>
+
+</LinearLayout>

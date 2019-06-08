@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/CommonActivity"
+              android:padding="@dimen/activity_common_double_padding"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/help_context"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_common"
+                android:text="@string/help_empty_text"/>
+    </ScrollView>
+
+</LinearLayout>

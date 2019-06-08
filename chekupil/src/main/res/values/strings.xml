@@ -1,0 +1,320 @@
+<resources>
+    <string name="ad_banner_navigator_id">ca-app-pub-9482444832041182/1405015740</string>
+    <string name="ad_banner_buy_id">ca-app-pub-9482444832041182/9903479792</string>
+    <string name="ad_banner_recipes_id">ca-app-pub-9482444832041182/7205388941</string>
+
+    <string name="app_name">ЧтоКупить</string>
+    <string name="app_name_beta">ЧтоКупить(бета)</string>
+
+    <string name="msgbox_default_title">Заголовок</string>
+    <string name="msgbox_default_message">Текст сообщения</string>
+    <string name="msgbox_default_positive">Да</string>
+    <string name="msgbox_default_negative">Нет</string>
+    <string name="msgbox_default_neutral">Отмена</string>
+
+    <string name="navigator_reg">Регистрация</string>
+    <string name="navigator_reg_description">Требуется для возможности отправки списков</string>
+    <string name="navigator_private">Личный кабинет</string>
+    <string name="navigator_private_description">Просмотр и изменение личных параметров</string>
+    <string name="navigator_list">Списки покупок</string>
+    <string name="navigator_list_description">Ваши списки покупок</string>
+    <string name="navigator_friend">Мои контакты</string>
+    <string name="navigator_friend_description">Управление вашими контактами</string>
+    <string name="navigator_group">Группы товаров</string>
+    <string name="navigator_group_description">Сортировка и изменение справочника групп товаров, используемых для
+        составления списков
+    </string>
+    <string name="navigator_recipe">Рецепты</string>
+    <string name="navigator_recipe_description">Рецепты приготовления блюд</string>
+    <string name="navigator_setting">Настройки</string>
+    <string name="navigator_setting_description">Настройки приложения</string>
+    <string name="navigator_feedback">Оценить приложение</string>
+    <string name="navigator_feedback_description">Нам важно ваше мнение</string>
+
+    <string name="navigator_test">Тестирование</string>
+    <string name="navigator_test_description">Тестирование списков</string>
+    <string name="navigator_menu_exit">Выход</string>
+    <string name="navigator_exit_title">Подтверждение</string>
+    <string name="navigator_exit_message">Вы действительно хотите выйти?</string>
+    <string name="navigator_exit_caption_yes">Да</string>
+    <string name="navigator_exit_caption_no">Нет</string>
+
+    <string name="personal_name_caption">Ваше текущее имя</string>
+    <string name="personal_new_account_name_caption">Имя для нового профиля</string>
+    <string name="personal_change_name_button_caption">Сменить имя</string>
+    <string name="personal_change_name_equals">Для смены имени введите его в поле выше</string>
+    <string name="personal_change_name_process">Идет процесс смены имени</string>
+    <string name="personal_change_name_success">Ваше имя успешно изменено</string>
+    <string name="personal_change_name_fail">Произошла ошибка при изменении имени</string>
+    <string name="personal_new_account_description">
+        Вы можете создать новый профиль. Укажите имя пользователя в поле ниже и нажмите конопку.
+        \nВнимание! При создании нового профиля вы потеряете связь со всеми контактами текущего профиля
+    </string>
+    <string name="personal_new_account_button_caption">Создать другой профиль</string>
+    <string name="personal_back_button_caption">Вернуться в меню.</string>
+    <string name="personal_confirm_new_account_title">Создание профиля</string>
+    <string name="personal_confirm_new_account_message">Вы уверены что хотите удалить текущий профиль и создать новый?
+    </string>
+    <string name="personal_confirm_new_account_positive">Да</string>
+    <string name="personal_confirm_new_account_negative">Отменить</string>
+
+    <string name="registration_name_caption">Укажите ваше имя</string>
+    <string name="registration_button_caption">Зарегистрироваться</string>
+    <string name="registration_later_button_caption">Отложить регистрацию</string>
+    <string name="registration_cancel_button_caption">Вернуться в меню</string>
+    <string name="registration_info_description">
+        Регистрация необходима для отправки и получения списков.
+        Для регистрации потребуется только ваше имя, ник и т.п.
+        Как вы себя назовете, так вы и будете отображаться у ваших друзей.
+    </string>
+    <string name="registration_progress_message">Ожидаем подтверждение с сервера</string>
+    <string name="registration_success_title">Регистрация успешна</string>
+    <string name="registration_success_message">Теперь, вы можете делиться списками со своими близкими и друзьями.
+        Для добавления контактов перейдите в раздел
+        <b>Мои контакты</b>
+    </string>
+
+    <string name="friend_empty_list">Список контактов пуст.\nНажмите (+) для добавления</string>
+    <string name="friend_activity_title">Контакты</string>
+    <string name="friend_activity_title_select">Выберите контакт</string>
+    <string name="friend_activity_title_selected_items">Выбрано %1$s из %2$s</string>
+    <string name="friend_popup_menu_edit">Изменить</string>
+    <string name="friend_popup_menu_delete">Удалить</string>
+    <string name="friend_name_dialog_title">Переименовать контакт</string>
+    <string name="friend_name_dialog_message">Укажите новое имя контакта</string>
+    <string name="friend_name_dialog_ok_caption">OK</string>
+    <string name="friend_name_dialog_cancel_caption">Отмена</string>
+    <string name="friend_dialog_delete_title">Удаление контактов (%1$s)</string>
+    <string name="friend_dialog_delete_message">Подтвердите удаление %1$s из контактов</string>
+    <string name="friend_dialog_delete_yes">Удалить</string>
+    <string name="friend_dialog_delete_no">Отмена</string>
+    <string name="friend_delete_process">Производится удаление котакта</string>
+    <string name="friend_delete_success">Контакт успешно удален</string>
+    <string name="friend_dialog_choose_title">Выберите вариант</string>
+    <string name="friend_dialog_choose_message">
+        Желаете создать приглашение нажмите **Пригласить**
+        \nЕсли вы получили приглашение, то нажмите **Ввести код**.
+    </string>
+    <string name="friend_dialog_choose_yes">Пригласить</string>
+    <string name="friend_dialog_choose_no">Ввести код</string>
+    <string name="friend_dialog_noreg_title">Необходима регистрация</string>
+    <string name="friend_dialog_noreg_message">Ой! Чтобы добавить контакты, нужно пройти регистрацию.</string>
+    <string name="friend_dialog_noreg_yes">Регистрация</string>
+    <string name="friend_dialog_noreg_no">Отмена</string>
+
+    <string name="friend_process_get_invite_message">Ожидаем создание приглашения на сервере</string>
+    <string name="friend_cant_create_invite_message">Для создания приглашения вам необходимо зарегестрироваться</string>
+    <string name="friend_cant_apply_invite_message">Для активации приглашения вам необходимо зарегестрироваться</string>
+
+    <string name="friend_dialog_preview_invite_title">Приглашение создано</string>
+    <string name="friend_dialog_preview_invite_message">Номер приглашения **%1$s**
+        \nТеперь его необходимо ввести на другом устройстве для активации.
+        Приглашение действует 2 суток, и может быть использованно 1 раз.
+    </string>
+    <string name="friend_dialog_preview_invite_yes">Отправить СМС</string>
+    <string name="friend_dialog_preview_invite_no">Скопировать</string>
+    <string name="friend_dialog_confirm_send_title">Подтверждение</string>
+    <string name="friend_dialog_confirm_send_message">Отправить список контакту %s?</string>
+    <string name="friend_dialog_confirm_send_yes">Да</string>
+    <string name="friend_dialog_confirm_send_no">Отмена</string>
+
+    <string name="friend_send_invite_sms_txt">Номер приглашения в ЧеКупил %1$s</string>
+    <string name="friend_toast_invite_copy_success">Номер приглашения скопирован в буфер</string>
+    <string name="friend_toast_invite_copy_error">Не поддерживается копирование в буфер</string>
+
+
+    <string name="invite_activity_title">Активация приглашения</string>
+    <string name="invite_info_message">Введите сюда код приглашения, который вы получили от друга</string>
+    <string name="invite_activate_code_text_caption">Код приглашения</string>
+    <string name="invite_button_activate_code_caption">Активировать</string>
+    <string name="invite_button_cancel_caption">Отмена</string>
+    <string name="invite_message_empty_code">Вы забыли указать код приглашения</string>
+    <string name="invite_message_add_friend">Добавлен в список контактов</string>
+    <string name="invite_process_activate_message">Код приглашения проверяется</string>
+
+    <string name="feedback_activity_title">Оценка приложения</string>
+    <string name="feedback_button_like_caption">Оценить в Google Play</string>
+    <string name="feedback_button_cancel_caption">Не сейчас</string>
+
+    <string name="shopping_title_activity_selected">Выделено %1$s из %2$s</string>
+    <string name="shopping_menu_delete">Удалить</string>
+    <string name="shopping_menu_edit">Переименовать</string>
+    <string name="shopping_empty_list">У вас нет ни одного списка.\nНажмите (+) для добавления</string>
+    <string name="shopping_new_name_template">Что купить %s</string>
+    <string name="shopping_name_dialog_title">Наименование списка</string>
+    <string name="shopping_name_dialog_message">Укажите наименование списка</string>
+    <string name="shopping_name_dialog_ok_caption">OK</string>
+    <string name="shopping_name_dialog_cancel_caption">Отмена</string>
+    <string name="shopping_dialog_delete_title">Удаление</string>
+    <string name="shopping_dialog_delete_message">Удалить выделенные списки покупок?</string>
+    <string name="shopping_dialog_delete_yes">Да</string>
+    <string name="shopping_dialog_delete_no">Отмена</string>
+    <string name="shopping_delete_success">Списки успешно удалены</string>
+
+    <string name="buy_empty_list">Список покупок пуст.\nНажмите кнопку + для добавления</string>
+    <string name="buy_search_add_item">Введите первые символы товара</string>
+    <string name="buy_menu_send">Отправить</string>
+    <string name="buy_menu_edit">Переименовать</string>
+    <string name="buy_menu_delete">Удалить купленные</string>
+    <string name="buy_menu_sort_group">Сортировка списка</string>
+    <string name="buy_menu_deselect_all">Снять выделение</string>
+    <string name="buy_menu_select_all">Выделить все</string>
+    <string name="buy_menu_inversion_all">Инверсия выделения</string>
+    <string name="buy_menu_test_fill">Тестовое заполение</string>
+    <string name="buy_dialog_name_caption">Что купить</string>
+    <string name="buy_dialog_amount_caption">Сколько</string>
+    <string name="buy_dialog_ok_caption">OK</string>
+    <string name="buy_dialog_cancel_caption">Отмена</string>
+    <string name="buy_dialog_fail_ammount">Неверно указано количество</string>
+    <string name="buy_delete_dialog_title">Подтверждение</string>
+    <string name="buy_delete_dialog_message">Удалить купленные позиции?</string>
+    <string name="buy_delete_dialog_yes">Удалить</string>
+    <string name="buy_delete_dialog_no">Отмена</string>
+    <string name="buy_dialog_select_all_title">Подтверждение</string>
+    <string name="buy_dialog_select_all_message">Выделить все как купленное?</string>
+    <string name="buy_dialog_select_all_yes">Да</string>
+    <string name="buy_dialog_select_all_no">Отмена</string>
+    <string name="buy_dialog_deselect_all_title">Подтверждение</string>
+    <string name="buy_dialog_deselect_all_message">Снять выделение с купленных позиций?</string>
+    <string name="buy_dialog_deselect_all_yes">Да</string>
+    <string name="buy_dialog_deselect_all_no">Отмена</string>
+    <string name="buy_dialog_inversion_all_title">Подтверждение</string>
+    <string name="buy_dialog_inversion_all_message">Изменить выделение в списке на обратное?</string>
+    <string name="buy_dialog_inversion_all_yes">Да</string>
+    <string name="buy_dialog_inversion_all_no">Отмена</string>
+    <string name="buy_process_send">Список отправляется</string>
+    <string name="buy_process_send_success_title">Список отправлен</string>
+    <string name="buy_process_send_success_message">Список успешно отправлен контакту %s</string>
+    <string name="buy_process_send_success_positive">OK</string>
+
+    <string name="search_added_item_shoplist">%s добавлено в список</string>
+    <string name="search_increment_item_shoplist">%s количество увеличено</string>
+    <string name="search_manual_item_buy_description">Добавить свое наименование</string>
+
+    <string name="group_title_activity_sort_shopping">Сортировка для %s</string>
+    <string name="group_title_activity_selected">Выделено %1$s из %2$s</string>
+    <string name="group_save_caption_button">Сохранить сортировку</string>
+    <string name="group_name_default_new">Новая группа</string>
+    <string name="group_name_dialog_title">Наименование группы</string>
+    <string name="group_name_dialog_message">Укажите наименование группы</string>
+    <string name="group_name_dialog_ok_caption">OK</string>
+    <string name="group_name_dialog_cancel_caption">Отмена</string>
+    <string name="group_duplicate_message">Такая группа уже существует</string>
+    <string name="group_menu_delete">Удалить</string>
+    <string name="group_success_delete_message">Группы успешно удалены</string>
+    <string name="group_dialog_delete_title">Подтвертите удаление</string>
+    <string name="group_dialog_delete_message">Удалить выбранные группы из справочника?</string>
+    <string name="group_dialog_delete_positive">Да</string>
+    <string name="group_dialog_delete_negative">Отмена</string>
+    <string name="group_dialog_save_sort_title">Подтверждение</string>
+    <string name="group_dialog_save_sort_message">Сохранить сортировку списка перед выходом?</string>
+    <string name="group_dialog_save_sort_positive">Сохранить</string>
+    <string name="group_dialog_save_sort_negative">Нет</string>
+
+
+    <string name="group_empty_list">Список групп пуст.\nНажмите (+) для добавления</string>
+
+    <string name="service_group_not_link_shopping">Группа не привязана к списку</string>
+    <string name="service_group_error_swap">Ошибка сохранения групп</string>
+    <string name="service_group_error_update">Ошибка изменения группы</string>
+    <string name="service_group_error_fatal">Глобальная ошибка сохранения группы</string>
+    <string name="service_buy_not_link_shopping">Покупки не привязаны к списку</string>
+    <string name="service_buy_error_update">Ошибка изменения записи</string>
+    <string name="service_buy_error_fatal">Глобальная ошибка сохранения записи</string>
+    <string name="service_friend_update_error">Ошибка сохранения записи</string>
+    <string name="service_shopping_update_error">Ошибка сохранения записи</string>
+    <string name="service_shopping_delete_error">Ошибка сохранения записи</string>
+
+    <string name="common_error_title">Упс, ошибка</string>
+    <string name="common_error_empty_message">Ошибка на сервере, повторите попытку позже</string>
+    <string name="common_error_positive">OK</string>
+
+
+    <string name="setting_cat_common_title">Основные настройки</string>
+    <string name="setting_cat_theme_title">Стиль</string>
+    <string name="setting_check_notification_title">Фоновый процесс</string>
+    <string name="setting_check_notification_off_summary">Включить фоновый сервис уведомлений</string>
+    <string name="setting_check_notification_on_summary">Выключить фоновый сервис уведомлений</string>
+    <string name="setting_check_dark_theme_title">Стиль приложения</string>
+    <string name="setting_check_dark_theme_off_summary">Включить темный стиль</string>
+    <string name="setting_check_dark_theme_on_summary">Включить светлый стиль</string>
+    <string name="setting_interval_list_title">Интервал опроса</string>
+    <string name="setting_interval_list_summary">Укажите интервал опроса сервера</string>
+
+    <string name="recipe_list_caption">Рецепты</string>
+    <string name="recipe_list_wait_get_start">Загрузка рецептов…</string>
+    <string name="recipe_list_wait_favorite">Обновление избранных…</string>
+
+    <string name="recipe_tab_all_caption">Рецепты</string>
+    <string name="recipe_tab_favorite_caption">Избранные</string>
+    <string name="recipe_tab_add_favorite_error_message">Ошибка добавления рецепта в избранные</string>
+
+    <string name="recipe_view_caption">Рецепт</string>
+    <string name="recipe_view_author">Сборник рецептов</string>
+    <string name="recipe_view_wait_get_one">Загружаем…</string>
+    <string name="recipe_view_image_description">Пример готового блюда</string>
+    <string name="recipe_view_buys_caption">Ингредиенты</string>
+    <string name="recipe_view_description_caption">Приготовление</string>
+    <string name="recipe_view_get_shoplist_button">Добавить в список покупок</string>
+    <string name="recipe_view_shoplist_ready_button">Открыть списки покупок</string>
+    <string name="recipe_view_shoplist_ready_message">Ингредиенты добавлены в ваш список покупок</string>
+    <string name="recipe_view_shoplist_error_message">Что-то пошло не так, повторите попытку</string>
+    <string name="recipe_error_get_one">Временные трудности с загрузкой рецепта, пожалуйста повторите попытку позже.</string>
+    <string name="recipe_error_load_list">Сервер временно не доступен, пожалуйста повторите попытку позже</string>
+    <string name="recipe_error_load_favorite">Сервер временно не доступен, пожалуйста повторите попытку позже</string>
+
+    <string-array name="entries">
+        <item>часто</item>
+        <item>оптимально</item>
+        <item>редко</item>
+    </string-array>
+
+    <string name="help_empty_caption">Инструкция</string>
+    <string name="help_empty_text">Нет справки по данной функции</string>
+    <string name="help_common_text">Есть два основных действия над элементами приложения:
+        \n **- Коснуться элемент**
+        \n **- Коснуться и подержать (длительное нажатие)**
+        \n **- Стрелка влево (левый верхний угол) возвращает к предыдущему состоянию**
+        \n
+        \n**Действия в списке покупок:**
+        \n - касание элемента открывает его редактирование.
+        \n - длительное нажатие меняет статус покупки на куплено и обратно.
+        \n
+        \nДля отправки списка через интернет необходимо войти в требуемый список, и нажать первый пункт меню (в виде
+        треугольника),
+        затем выбрать кому отправить список.
+        \n
+        \nВ остальных случаях длительное нажатие на элемент списка переводит его в режим выделения.
+        \nВ этом режиме меняется состояние меню в заголовке приложения.
+        \nПри обычном касании элемент открывается для редактирования, либо происходит его выбор.
+        \n
+        \nСортировка списков осуществляется по группам а внутри группы по алфавиту. Для
+        каждого списка сохраняется своя уникальная сортировка. Также эта сортировка сохраняется
+        при отправке списка.
+        \n
+        \nРегистрация в приложении необходима лишь для того, чтобы иметь возможность отправлять списки через интернет.
+    </string>
+    <string name="help_buy_add_text">Действия по добавлению покупок в список:
+        \n - **Коснуться** требуемой позиции из списка (появится количество товара добавленного в список)
+        \n - **Длительное нажатие** на позицию открывает окно редактирования
+        (где можно изменить количество, группу и ед.измерения)
+        \n
+        \nПри вводе наименования продукта в верхнее поле ввода происходит фильтрация списка
+        подходящих товаров, причем первым элементом списка создается введенное наименование,
+        которое можно добавить в список.
+    </string>
+    <string name="help_buy_message_get_start">
+        Для смены состояния, нажмите и подержите требуемую запись в списке.
+        \nДля редактирования просто коснитесь ее.
+    </string>
+    <string name="help_recipe_list_message_get_start">
+        Чтобы открыть рецепт коснитесь его.
+        \nДля добавления рецепта в избранные нажмите звездочку в правом верхнем углу.
+    </string>
+
+    <string name="test_caption_activity">Тестирование списка</string>
+    <string name="title_activity_test_tab">TestTabActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

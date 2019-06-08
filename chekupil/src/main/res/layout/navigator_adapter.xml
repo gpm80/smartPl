@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/CommonItemAdapter"
+              android:background="?android:attr/selectableItemBackground"
+              android:orientation="horizontal">
+
+    <ImageView android:id="@+id/navigator_image"
+            android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:srcCompat="@drawable/ic_nav_recipe"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:orientation="vertical">
+
+        <TextView android:id="@+id/navigator_caption"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/font_size_common_big"/>
+        <TextView android:id="@+id/navigator_description"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/font_size_common_description"/>
+    </LinearLayout>
+</LinearLayout>

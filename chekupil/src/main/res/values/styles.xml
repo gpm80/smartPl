@@ -1,0 +1,80 @@
+<resources>
+    <!--Светлый стиль-->
+    <style name="CheTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="buttonStyle">@style/CheTheme.Button.Light</item>
+        <item name="alertDialogTheme">@style/CheTheme.Dialog.Light</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/che_colorPrimary_light</item>
+        <item name="colorAccent">@color/che_float_button_light</item>
+        <item name="android:windowBackground">@color/che_background_light</item>
+        <item name="android:textColorPrimary">@color/my_primary_text_light</item>
+        <item name="android:textColorSecondary">@color/my_primary_text_light</item>
+        <item name="android:textColorTertiary">@color/my_primary_text_light</item>
+    </style>
+
+    <!--Темный стиль-->
+    <style name="CheTheme.Dark" parent="Theme.AppCompat">
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="buttonStyle">@style/CheTheme.Button.Dark</item>
+        <item name="alertDialogTheme">@style/CheTheme.Dialog.Dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/che_colorPrimary_dark</item>
+        <item name="colorPrimaryDark">@color/che_colorPrimaryDark_dark</item>
+        <item name="colorAccent">@color/che_float_button_dark</item>
+        <item name="android:windowBackground">@color/che_background_dark</item>
+        <item name="android:textColorPrimary">@color/my_primary_text_dark</item>
+        <item name="android:textColorSecondary">@color/my_primary_text_dark</item>
+        <item name="android:textColorTertiary">@color/my_primary_text_dark</item>
+    </style>
+
+    <style name="CheTheme.Dialog.Light" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/che_dialog_button_light</item>
+    </style>
+    <style name="CheTheme.Dialog.Dark" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/che_dialog_button_dark</item>
+    </style>
+    <style name="CheTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="CheTheme.PopupOverlay.Light" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="CheTheme.PopupOverlay.Dark" parent="ThemeOverlay.AppCompat.Dark"/>
+
+    <style name="CheTheme.Button.Light" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/hbutton_light</item>
+        <item name="android:textColor">@color/button_text_color_light</item>
+    </style>
+    <style name="CheTheme.Button.Dark" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/hbutton_dark</item>
+        <item name="android:textColor">@color/button_text_color_dark</item>
+    </style>
+
+    <style name="CommonActivity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">4dp</item>
+    </style>
+    <style name="CommonItemAdapter">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--<item name="preferenceTheme">@style/PreferenceThemeLight</item>-->
+    <!--<item name="colorPrimary">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="buttonStyle">@style/MyThemeButton</item>-->
+    <!--<item name="android:windowBackground">@color/background_window</item>-->
+    <!--</style>-->
+
+    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+    <!--<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>-->
+</resources>

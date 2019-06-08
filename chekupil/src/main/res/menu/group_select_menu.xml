@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/group_menu_group_common"
+           android:visible="false">
+        <item
+                android:id="@+id/group_menu_delete"
+                android:icon="@drawable/ic_delete"
+                android:orderInCategory="10"
+                android:title="@string/group_menu_delete"
+                app:showAsAction="ifRoom|withText"/>
+    </group>
+</menu>

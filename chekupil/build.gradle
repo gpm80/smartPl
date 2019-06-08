@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenLocal()
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "ru.smart.planet"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 29
+        versionName "2.1.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "TEST", "true"
+            buildConfigField "boolean", "TEST_NOTIF", "false"
+            buildConfigField "String", "API_ENDPOINT", "\"http://localhost/rest/\""
+            applicationIdSuffix ".test"
+            versionNameSuffix "-debug"
+        }
+        release {
+            minifyEnabled false
+            buildConfigField "boolean", "TEST", "false"
+            buildConfigField "boolean", "TEST_NOTIF", "false"
+            buildConfigField "String", "API_ENDPOINT", "\"http://localhost/rest/\""
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets.debug {
+        manifest.srcFile 'config/debug/AndroidManifest.xml'
+    }
+    sourceSets.release {
+        manifest.srcFile 'config/release/AndroidManifest.xml'
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def newFileName = "chekupil-${variant.buildType.name}-${variant.versionCode}.apk"
+            output.outputFile = new File(
+                    output.outputFile.parent,
+                    newFileName)
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:27.1.0'
+    compile 'com.android.support:preference-v7:27.1.0'
+    compile 'com.android.support:design:27.1.0'
+    compile 'com.android.support:support-vector-drawable:27.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.squareup.picasso:picasso:2.71828'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    testCompile 'junit:junit:4.12'
+}

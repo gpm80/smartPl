@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Цвета светлой темы -->
+    <color name="che_colorPrimary_light">#036e0a</color>
+    <color name="che_background_light">#d1d1d1</color>
+    <color name="che_background_inverse_light">#999999</color>
+    <color name="che_float_button_light">#036e0a</color>
+    <color name="che_float_help_button_light">#cab200</color>
+    <color name="che_dialog_button_light">#001074</color>
+    <color name="che_icons_light">#ffffff</color>
+
+    <color name="che_mask_draw_light">#000000</color>
+    <color name="che_text_common_light">#000000</color>
+    <color name="che_text_common_disable_light">#787777</color>
+    <color name="che_text_header_light">#036e0a</color>
+
+    <!-- Цвета темной темы -->
+    <color name="che_colorPrimary_dark">#013905</color>
+    <color name="che_colorPrimaryDark_dark">#000200</color>
+    <color name="che_background_dark">#262626</color>
+    <color name="che_background_inverse_dark">#666666</color>
+    <color name="che_float_button_dark">#009e0b</color>
+    <color name="che_float_help_button_dark">#8c7b00</color>
+    <color name="che_dialog_button_dark">#e7e7e7</color>
+    <color name="che_icons_dark">#686767</color>
+
+    <color name="che_mask_draw_dark">#dedede</color>
+    <color name="che_text_common_dark">#dedede</color>
+    <color name="che_text_common_disable_dark">#787777</color>
+    <color name="che_text_header_dark">#07c714</color>
+
+    <!-- Цвет стиля кнопок (градиент) -->
+    <color name="button_top_light">#0a000000</color>
+    <color name="button_bottom_light">#46000000</color>
+    <color name="button_border_light">#036e0a</color>
+    <color name="button_border_touch_light">#023005</color>
+    <color name="button_text_color_light">#036e0a</color>
+
+    <color name="button_top_dark">#0affffff</color>
+    <color name="button_bottom_dark">#46ffffff</color>
+    <color name="button_border_dark">#009e0b</color>
+    <color name="button_border_touch_dark">#c8009e0b</color>
+    <color name="button_text_color_dark">#009e0b</color>
+
+    <!-- Цвета общие -->
+    <color name="che_mask_draw_common">#838383</color>
+    <color name="icon_common">#838383</color>
+
+    <!--Цвета оформления рецептов-->
+    <color name="recipe_stroke">#b6b5b5</color>
+    <color name="recipe_favorite_off">#b6b5b5</color>
+    <color name="recipe_favorite_on">#1eb300</color>
+    <color name="recipe_tab_text_unselected">#999898</color>
+    <color name="recipe_tab_text_selected">#e4e4e4</color>
+</resources>

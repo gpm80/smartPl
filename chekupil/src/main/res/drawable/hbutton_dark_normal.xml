@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="8dp"/>
+    <gradient
+            android:angle="90"
+            android:endColor="@color/button_top_dark"
+            android:startColor="@color/button_bottom_dark"
+            android:type="linear"/>
+    <padding
+            android:left="@dimen/button_common_padding_horizontal"
+            android:right="@dimen/button_common_padding_horizontal"
+            android:top="@dimen/button_common_padding_vertical"
+            android:bottom="@dimen/button_common_padding_vertical"
+    />
+
+    <stroke android:color="@color/button_border_dark"
+            android:width="2dp"/>
+</shape>

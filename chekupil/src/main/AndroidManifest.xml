@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="ru.micode.shopping">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+            android:name=".context.ApplicationLoader"
+            android:allowBackup="false"
+            android:supportsRtl="true"
+            android:theme="@style/CheTheme">
+        <activity android:name=".ui.NavigatorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.ShoppingActivity"/>
+        <activity android:name=".ui.BuyEditActivity"/>
+        <activity android:name=".ui.AddBuySearchActivity"/>
+        <activity android:name=".ui.GroupActivity"/>
+        <activity android:name=".ui.PrefActivity"/>
+        <activity android:name=".ui.HelpActivity"/>
+        <activity android:name=".ui.RecipeViewActivity"/>
+        <activity android:name=".ui.test.RecyclerTestActivity"/>
+        <activity android:name=".ui.RecipeListTabActivity"/>
+
+        <service
+                android:name=".service.task.NotificationService"
+                android:enabled="true"/>
+
+        <receiver
+                android:name=".context.AppStartReceiver"
+                android:enabled="true"
+                android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="ru.micode.shopping.start"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.REBOOT"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

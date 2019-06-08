@@ -1,0 +1,23 @@
+<resources>
+    <!-- Отступ общий для активностей-->
+    <dimen name="activity_common_double_padding">8dp</dimen>
+    <dimen name="dialog_layout_padding">10dp</dimen>
+    <dimen name="fab_margin">20dp</dimen>
+    <dimen name="font_size_common">18sp</dimen>
+    <dimen name="font_size_common_big">20sp</dimen>
+    <dimen name="font_size_common_description">12sp</dimen>
+    <dimen name="font_size_header_group_buy">18sp</dimen>
+    <dimen name="margin_top_header">3dp</dimen>
+    <dimen name="font_size_min">16sp</dimen>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="recipe_common_margin">4dp</dimen>
+    <dimen name="recipe_space">8dp</dimen>
+
+    <dimen name="button_common_padding_vertical">1dp</dimen>
+    <dimen name="button_common_padding_horizontal">6dp</dimen>
+    <dimen name="common_padding_vertical">8dp</dimen>
+    <dimen name="common_padding_horizontal">8dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

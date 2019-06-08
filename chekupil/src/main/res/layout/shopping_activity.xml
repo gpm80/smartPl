@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/CommonActivity">
+
+    <android.support.v7.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/shopping_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    />
+    <TextView android:id="@+id/shopping_empty_list_text"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:visibility="gone"
+              android:textSize="@dimen/font_size_common"
+              android:text="@string/shopping_empty_list"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/float_new_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_add"/>
+</android.support.design.widget.CoordinatorLayout>
