@@ -164,6 +164,8 @@ public class BuyEditActivity extends MyAbstractActivity {
                     deleteSelected();
                     break;
                 case R.id.buy_menu_sort_group:
+
+
                     // Сортировка групп списка
                     Intent intent = new Intent(getActivity(), GroupActivity.class);
                     intent.putExtra(GroupActivity.KEY_SORT_GROUP_BY_SHOPLIST, parentShopping.getId());

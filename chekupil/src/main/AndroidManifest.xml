@@ -40,6 +40,7 @@
         <activity android:name=".ui.PrefActivity"/>
         <activity android:name=".ui.HelpActivity"/>
         <activity android:name=".ui.RecipeViewActivity"/>
+        <activity android:name=".ui.ProductListActivity"/>
         <activity android:name=".ui.test.RecyclerTestActivity"/>
         <activity android:name=".ui.map.MarkerMapActivity"/>
         <activity android:name=".ui.RecipeListTabActivity"/>
