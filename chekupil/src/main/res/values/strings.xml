@@ -3,8 +3,8 @@
     <string name="ad_banner_buy_id">ca-app-pub-9482444832041182/9903479792</string>
     <string name="ad_banner_recipes_id">ca-app-pub-9482444832041182/7205388941</string>
 
-    <string name="app_name">ЧтоКупить</string>
-    <string name="app_name_beta">ЧтоКупить(бета)</string>
+    <string name="app_name">Smart Planet R</string>
+    <string name="app_name_beta">Smart Planet R (beta)</string>
 
     <string name="msgbox_default_title">Заголовок</string>
     <string name="msgbox_default_message">Текст сообщения</string>

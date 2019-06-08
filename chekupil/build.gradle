@@ -21,7 +21,7 @@ android {
         debug {
             buildConfigField "boolean", "TEST", "true"
             buildConfigField "boolean", "TEST_NOTIF", "false"
-            buildConfigField "String", "API_ENDPOINT", "\"http://93.171.217.252/shopping-server/rest/\""
+            buildConfigField "String", "API_ENDPOINT", "\"http://localhost/rest/\""
             applicationIdSuffix ".test"
             versionNameSuffix "-debug"
         }
@@ -29,7 +29,7 @@ android {
             minifyEnabled false
             buildConfigField "boolean", "TEST", "false"
             buildConfigField "boolean", "TEST_NOTIF", "false"
-            buildConfigField "String", "API_ENDPOINT", "\"http://93.171.217.252/shopping-server/rest/\""
+            buildConfigField "String", "API_ENDPOINT", "http://localhost/rest/\""
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
