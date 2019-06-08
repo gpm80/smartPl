@@ -12,6 +12,11 @@
             android:allowBackup="false"
             android:supportsRtl="true"
             android:theme="@style/CheTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
         <activity android:name=".ui.NavigatorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -27,6 +32,7 @@
         <activity android:name=".ui.HelpActivity"/>
         <activity android:name=".ui.RecipeViewActivity"/>
         <activity android:name=".ui.test.RecyclerTestActivity"/>
+        <activity android:name=".ui.map.MarkerMapActivity"/>
         <activity android:name=".ui.RecipeListTabActivity"/>
 
         <service

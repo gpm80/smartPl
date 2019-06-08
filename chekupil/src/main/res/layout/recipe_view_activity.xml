@@ -68,6 +68,13 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:text="@string/recipe_view_get_shoplist_button"/>
+                    <Button
+                        android:id="@+id/show_on_map_button"
+                        android:layout_marginTop="@dimen/recipe_space"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/show_on_map_button_text"/>
                 </LinearLayout>
                 <TextView
                         android:id="@+id/recipe_view_description_caption"

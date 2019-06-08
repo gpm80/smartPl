@@ -21,7 +21,7 @@ android {
         debug {
             buildConfigField "boolean", "TEST", "true"
             buildConfigField "boolean", "TEST_NOTIF", "false"
-            buildConfigField "String", "API_ENDPOINT", "\"http://localhost/rest/\""
+            buildConfigField "String", "API_ENDPOINT", "\"http://93.171.217.252/shopping-server/rest/\""
             applicationIdSuffix ".test"
             versionNameSuffix "-debug"
         }
@@ -29,7 +29,7 @@ android {
             minifyEnabled false
             buildConfigField "boolean", "TEST", "false"
             buildConfigField "boolean", "TEST_NOTIF", "false"
-            buildConfigField "String", "API_ENDPOINT", "\"http://localhost/rest/\""
+            buildConfigField "String", "API_ENDPOINT", "\"http://93.171.217.252/shopping-server/rest/\""
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -42,11 +42,8 @@ android {
     }
 
     applicationVariants.all { variant ->
-        variant.outputs.each { output ->
-            def newFileName = "chekupil-${variant.buildType.name}-${variant.versionCode}.apk"
-            output.outputFile = new File(
-                    output.outputFile.parent,
-                    newFileName)
+        variant.outputs.all {
+            outputFileName = "${variant.name}-${variant.versionName}.apk"
         }
     }
 }
@@ -61,6 +58,7 @@ dependencies {
     compile 'com.android.support:design:27.1.0'
     compile 'com.android.support:support-vector-drawable:27.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.google.android.gms:play-services-maps:12.0.1'
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
     compile 'com.squareup.okhttp:okhttp:2.0.0'

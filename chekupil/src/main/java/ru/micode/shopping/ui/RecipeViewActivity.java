@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -36,11 +37,14 @@ import ru.micode.shopping.service.FavoriteService;
 import ru.micode.shopping.service.ShoppingService;
 import ru.micode.shopping.ui.common.MyAbstractActivity;
 import ru.micode.shopping.ui.common.MyAbstractFragment;
+import ru.micode.shopping.ui.map.MarkerMapActivity;
 
 /**
  * Created by Petr Gusarov on 02.04.19.
  */
 public class RecipeViewActivity extends MyAbstractActivity {
+
+
     @Override
     protected Fragment createFragment() {
         return new RecipeViewFragment();
@@ -59,7 +63,7 @@ public class RecipeViewActivity extends MyAbstractActivity {
     /**
      * Фрагмент полного просмотра
      */
-    public static class RecipeViewFragment extends MyAbstractFragment {
+    public static class RecipeViewFragment extends MyAbstractFragment  {
 
         private static final String LOG_TAG = RecipeViewFragment.class.getSimpleName();
         public static final String INTENT_KEY_RECIPE_UID = "keyRecipeUid";
@@ -71,6 +75,7 @@ public class RecipeViewActivity extends MyAbstractActivity {
         private TextView description;
         private Button loadShopList;
         private boolean addedToShopList;
+        private Button mapButton;
 
         @Override
         protected int getResIdFragment() {
@@ -88,6 +93,7 @@ public class RecipeViewActivity extends MyAbstractActivity {
             setRetainInstance(true);
             addedToShopList = false;
             final String recipeUid = getActivity().getIntent().getStringExtra(INTENT_KEY_RECIPE_UID);
+
             new ApiHandler<ExRecipe>(getContext())
                 .checkNetState(true)
                 .enableProcessView(R.string.recipe_view_wait_get_one)
@@ -112,6 +118,7 @@ public class RecipeViewActivity extends MyAbstractActivity {
                         showErrorMessage(R.string.recipe_error_get_one);
                     }
                 });
+
         }
 
         @Override
@@ -134,6 +141,13 @@ public class RecipeViewActivity extends MyAbstractActivity {
                 @Override
                 public void onClick(View view) {
                     loadToShopList();
+                }
+            });
+            mapButton = view.findViewById(R.id.show_on_map_button);
+            mapButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(getContext(), MarkerMapActivity.class));
                 }
             });
             refreshStateButton();
@@ -225,4 +239,6 @@ public class RecipeViewActivity extends MyAbstractActivity {
 
 
     }
+
+
 }

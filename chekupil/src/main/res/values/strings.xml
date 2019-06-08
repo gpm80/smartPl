@@ -317,4 +317,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="google_maps_key">AIzaSyC8zysvJJwUCYCWAv6gpzSrUFFe6BXMF7E</string>
+
+    <string name="show_on_map_button_text">Показать на карте</string>
 </resources>
