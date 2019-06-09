@@ -21,7 +21,8 @@ android {
         debug {
             buildConfigField "boolean", "TEST", "true"
             buildConfigField "boolean", "TEST_NOTIF", "false"
-            buildConfigField "String", "API_ENDPOINT", "\"http://localhost/rest/\""
+            buildConfigField "String", "API_ENDPOINT", "\"http://93.171.217.252/shopping-server/rest/\""
+            buildConfigField "String", "PLANET_ENDPOINT", "\"http://192.168.0.106:8085/\""
             applicationIdSuffix ".test"
             versionNameSuffix "-debug"
         }
@@ -29,7 +30,8 @@ android {
             minifyEnabled false
             buildConfigField "boolean", "TEST", "false"
             buildConfigField "boolean", "TEST_NOTIF", "false"
-            buildConfigField "String", "API_ENDPOINT", "http://localhost/rest/\""
+            buildConfigField "String", "API_ENDPOINT", "\"http://93.171.217.252/shopping-server/rest/\""
+            buildConfigField "String", "PLANET_ENDPOINT", "\"http://93.171.217.252/planet-server/rest/\""
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -41,9 +43,17 @@ android {
         manifest.srcFile 'config/release/AndroidManifest.xml'
     }
 
+//    applicationVariants.all { variant ->
+//        variant.outputs.all {
+//            outputFileName = "${variant.name}-${variant.versionName}.apk"
+//        }
+//    }
     applicationVariants.all { variant ->
-        variant.outputs.all {
-            outputFileName = "${variant.name}-${variant.versionName}.apk"
+        variant.outputs.each { output ->
+            def newFileName = "sp-${variant.buildType.name}-${variant.versionCode}.apk"
+            output.outputFile = new File(
+                    output.outputFile.parent,
+                    newFileName)
         }
     }
 }
@@ -58,11 +68,12 @@ dependencies {
     compile 'com.android.support:design:27.1.0'
     compile 'com.android.support:support-vector-drawable:27.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation 'com.google.android.gms:play-services-maps:12.0.1'
+    compile 'com.google.android.gms:play-services-maps:12.0.1'
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
     compile 'com.squareup.okhttp:okhttp:2.0.0'
     compile 'com.squareup.picasso:picasso:2.71828'
     compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'ru.smart.planet:planet-api:1.0'
     testCompile 'junit:junit:4.12'
 }
