@@ -125,7 +125,7 @@ public class NavigatorActivity extends MyAbstractActivity {
             int pos = 0;
             navigatorReg.add(new NavigatorBean(pos++, R.drawable.ic_nav_shoplist, R.string.navigator_list, R.string.navigator_list_description, ShoppingActivity.class));
             navigatorReg.add(new NavigatorBean(pos++, R.drawable.ic_restaurant, R.string.navigator_product, R.string.navigator_product_description, ProductListActivity.class));
-            navigatorReg.add(new NavigatorBean(pos++, R.drawable.ic_nav_recipe, R.string.navigator_recipe, R.string.navigator_recipe_description, RecipeListTabActivity.class));
+            //navigatorReg.add(new NavigatorBean(pos++, R.drawable.ic_nav_recipe, R.string.navigator_recipe, R.string.navigator_recipe_description, RecipeListTabActivity.class));
             navigatorReg.add(new NavigatorBean(pos++, R.drawable.ic_nav_groups, R.string.navigator_group, R.string.navigator_group_description, GroupActivity.class));
             navigatorReg.add(new NavigatorBean(pos++, R.drawable.ic_nav_settings, R.string.navigator_setting, R.string.navigator_setting_description, PrefActivity.class));
             navigatorAdapter.clear();

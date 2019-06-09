@@ -54,16 +54,17 @@ public class ProductAdapter extends MyRecyclerAdapter<Product> {
         private TextView description;
         private ImageView image;
         private ProgressBar loadingBar;
+        private ImageView favoriteImage;
 
         public ProductHolder(Context context, ViewGroup group, ActionListener<Product> actionListener) {
-            super(context, R.layout.recipe_adapter, group, actionListener);
-            title = itemView.findViewById(R.id.product_view_title);
-            //favoriteImage = itemView.findViewById(R.id.product_favorite); //in productAdapter
-            description = itemView.findViewById(R.id.product_view_description);
-            image = itemView.findViewById(R.id.product_view_image);
-            loadingBar = itemView.findViewById(R.id.product_view_loading);
+            super(context, R.layout.product_adapter, group, actionListener);
+            title = itemView.findViewById(R.id.product_title);
+            description = itemView.findViewById(R.id.product_description);
+            image = itemView.findViewById(R.id.product_image);
+            loadingBar = itemView.findViewById(R.id.product_loading);
+//            favoriteImage = itemView.findViewById(R.id.recipe_favorite);
         }
-//
+
 //        /**
 //         * Установка статуса избранного рецепта
 //         *
@@ -111,6 +112,26 @@ public class ProductAdapter extends MyRecyclerAdapter<Product> {
 //            } else {
 //                loadingBar.setVisibility(View.GONE);
 //            }
-        }
-    }
+            if (StringUtils.isNotBlank(value.getSrcImage())) {
+                loadingBar.setVisibility(View.VISIBLE);
+                String srcImage = value.getSrcImage();
+                // Загрузить картинку
+                Picasso picasso = Picasso.get();
+                //picasso.setIndicatorsEnabled(BuildConfig.DEBUG);
+                picasso.load(srcImage)
+                        .into(image, new Callback() {
+                            @Override
+                            public void onSuccess() {
+                                loadingBar.setVisibility(View.GONE);
+                            }
+
+                            @Override
+                            public void onError(Exception e) {
+                                loadingBar.setVisibility(View.GONE);
+                            }
+                        });
+            } else {
+                loadingBar.setVisibility(View.GONE);
+            }
+    }}
 }

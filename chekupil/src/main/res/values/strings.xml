@@ -268,11 +268,6 @@
     <string name="recipe_error_load_favorite">Сервер временно не доступен, пожалуйста повторите попытку позже</string>
 
     <string name="product_list_caption">Продукты</string>
-    <string name="product_view_image_description">qwer</string>
-    <string name="product_view_category">qwer</string>
-    <string name="product_view_status">qwer</string>
-    <string name="product_view_manufacture">qwer</string>
-    <string name="product_view_description_caption">qwer</string>
     <string name="product_list_wait_get_start">Загружаем доступные продукты</string>
 
     <string-array name="entries">
@@ -283,28 +278,14 @@
 
     <string name="help_empty_caption">Инструкция</string>
     <string name="help_empty_text">Нет справки по данной функции</string>
-    <string name="help_common_text">Есть два основных действия над элементами приложения:
-        \n **- Коснуться элемент**
-        \n **- Коснуться и подержать (длительное нажатие)**
-        \n **- Стрелка влево (левый верхний угол) возвращает к предыдущему состоянию**
-        \n
-        \n**Действия в списке покупок:**
-        \n - касание элемента открывает его редактирование.
-        \n - длительное нажатие меняет статус покупки на куплено и обратно.
-        \n
-        \nДля отправки списка через интернет необходимо войти в требуемый список, и нажать первый пункт меню (в виде
-        треугольника),
-        затем выбрать кому отправить список.
-        \n
-        \nВ остальных случаях длительное нажатие на элемент списка переводит его в режим выделения.
-        \nВ этом режиме меняется состояние меню в заголовке приложения.
-        \nПри обычном касании элемент открывается для редактирования, либо происходит его выбор.
-        \n
-        \nСортировка списков осуществляется по группам а внутри группы по алфавиту. Для
-        каждого списка сохраняется своя уникальная сортировка. Также эта сортировка сохраняется
-        при отправке списка.
-        \n
-        \nРегистрация в приложении необходима лишь для того, чтобы иметь возможность отправлять списки через интернет.
+    <string name="help_common_text">**Доставляем качественные продукты от фермерских хозяйств.**
+ \n - Не доверяете качеству товаров на полках в супермаркете?
+ \n - Заказываете дорогие продукты из Европы?
+ \n - Следите за своим питанием и здоровьем ваших близких?
+ \n    Вы можете заказать доставку фермерских продуктов прямо с полей до порога вашего дома!
+ \n    **Для потребителя:** мы предлагаем большой выбор продуктов и гарантируем свежесть –
+ \n вы увидите, за какое время был доставлен товар! Есть опция самовывоза.
+ \n     **Для производителя:** вы сможете значительно расширить клиентскую базу, отслеживать движение курьеров и управлять цепями поставки.
     </string>
     <string name="help_buy_add_text">Действия по добавлению покупок в список:
         \n - **Коснуться** требуемой позиции из списка (появится количество товара добавленного в список)
@@ -333,4 +314,22 @@
     <string name="google_maps_key">AIzaSyC8zysvJJwUCYCWAv6gpzSrUFFe6BXMF7E</string>
 
     <string name="show_on_map_button_text">Показать на карте</string>
+
+    <string name="product_view_image_description">Изображение продукта</string>
+
+    <string name="product_view_category">Категория</string>
+    <string name="product_view_status">Био статус</string>
+    <string name="product_view_manufacture">Производитель</string>
+
+    <string name="product_view_category_text">Овощи</string>
+    <string name="product_view_status_text">Зелёный</string>
+    <string name="product_view_manufacture_text">"ООО Натуральное фермерское хозяйство"</string>
+
+    <string name="product_view_description_caption">Описание</string>
+    <string name="product_view_caption">Продукты</string>
+
+
+
+
+    <string name="location_rationale">Location permission is used for calculation of optimal delivery</string>
 </resources>

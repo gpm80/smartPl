@@ -60,7 +60,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="16sp"/>
+                            android:textSize="16sp"
+                            android:text="@string/product_view_category_text" />
                     <TextView
                         android:id="@+id/product_view_status_caption"
                         android:layout_width="wrap_content"
@@ -74,7 +75,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="16sp"/>
+                        android:textSize="16sp"
+                        android:text="@string/product_view_status_text"/>
                     <TextView
                         android:id="@+id/product_view_manufacture_caption"
                         android:layout_width="wrap_content"
@@ -88,7 +90,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="16sp"/>
+                        android:textSize="16sp"
+                        android:text="@string/product_view_manufacture_text"/>
                     <Button
                             android:id="@+id/product_view_get_shoplist_button"
                             android:layout_marginTop="@dimen/recipe_space"
@@ -119,7 +122,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="18sp"/>
+                        android:textSize="18sp"
+                    />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

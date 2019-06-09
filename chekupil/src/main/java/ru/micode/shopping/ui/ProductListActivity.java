@@ -66,11 +66,9 @@ public class ProductListActivity extends MyAbstractActivity {
                     switch (type) {
                         case CLICK:
                             if (value != null) {
-                                Toast.makeText(getContext(), "Не реализовано!", Toast.LENGTH_SHORT).show();
-                                // TODO Product Activity
-//                                Intent intent = new Intent(getContext(), RecipeViewActivity.class);
-//                                intent.putExtra(RecipeViewActivity.RecipeViewFragment.INTENT_KEY_RECIPE_UID, value.getUid());
-//                                startActivity(intent);
+                                Intent intent = new Intent(getContext(), ProductViewActivity.class);
+                                intent.putExtra(ProductViewActivity.ProductViewFragment.INTENT_KEY_PRODUCT_UID, value.getUid());
+                                startActivity(intent);
                                 return true;
                             }
                             break;
